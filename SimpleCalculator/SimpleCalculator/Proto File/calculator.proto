@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package calculator;
+
+service Calculate {
+    rpc GetResult (ActionRequest) returns (ActionReply) {}
+}
+
+message ActionRequest {
+    string operation = 1;  
+    double number1 = 2;
+    double number2 = 3;
+}
+
+message ActionReply {
+    double result = 4;
+}

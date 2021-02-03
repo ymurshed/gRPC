@@ -1,0 +1,2 @@
+protoc.exe -I=C:\inputs --csharp_out=C:\trash --grpc_out=C:\trash C:\inputs\reverse.proto 
+--plugin=protoc-gen-grpc=C:\Users\yaad\.nuget\packages\grpc.tools\1.13.0\tools\windows_x86\grpc_csharp_plugin.exe
